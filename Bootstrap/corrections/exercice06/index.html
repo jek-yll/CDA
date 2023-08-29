@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice F - Forms D</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="container">
+        <form class="row my-3 g-3">
+            <div class="col-12 col-md-8 order-2 order-md-1">
+                <div class="bg-dark p-3 rounded">
+                    <h3 class="fw-light text-light d-none d-md-block">- Inscription -</h3>
+                    <h3 class="fw-light text-light d-md-none d-block">- Infos de base -</h3>
+                    <hr class="text-light">
+                    <div class="row row-cols-1 row-cols-md-2 gy-2">
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="">
+                                <label for="firstname">Prénom</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="">
+                                <label for="lastname">Nom</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="username" name="username" placeholder="">
+                                <label for="username">Pseudonyme</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="">
+                                <label for="password">Mot de passe</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="confPassword" name="confPassword" placeholder="">
+                                <label for="confPassword">Confirmation</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="text-light">
+                    <button class="btn btn-outline-light d-block ms-auto"><i class="bi bi-send"></i> Envoyer</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 order-1 order-md-2">
+                <div class="bg-dark p-3 rounded">
+                    <h3 class="fw-light text-light d-none d-md-block">- Vos langues -</h3>
+                    <h3 class="fw-light text-light d-md-none d-block">- Inscription -</h3>
+                    <hr class="text-light">
+                    <select name="languages" id="languages" class="form-select" multiple size="8">
+                        <optgroup label="Europe">
+                            <!-- option*5[value="europe-$$"]{Europe n°$$} -->
+                            <option value="europe-01">Europe n°01</option>
+                            <option value="europe-02">Europe n°02</option>
+                            <option value="europe-03">Europe n°03</option>
+                            <option value="europe-04">Europe n°04</option>
+                            <option value="europe-05">Europe n°05</option>
+                        </optgroup>
+                        <optgroup label="Asia">
+                            <!-- option*5[value="asia-$$"]{Asia n°$$} -->
+                            <option value="asia-01">Asia n°01</option>
+                            <option value="asia-02">Asia n°02</option>
+                            <option value="asia-03">Asia n°03</option>
+                            <option value="asia-04">Asia n°04</option>
+                            <option value="asia-05">Asia n°05</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@600&display=swap');
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Tektur', cursive;
+}
+
+.nav {
+    background-color: rgb(230, 215, 17);
+    height: 5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+
+li {
+    font-size: 2em;
+    display: inline-block;
+    margin: 0 2em;
+}
+
+.horaire {
+    border: solid;
+    border-spacing: 5px 1rem;
+    background-color: aquamarine;
+    padding: 0.3em;
+}
+
+td:nth-child(even) {
+    background-color: burlywood;
+}
+
+.contact {
+    background-color: aquamarine;
+    border: 0.1em solid;
+    padding: 0.5em;
+}
+
+button {
+    background-color: blueviolet;
+    padding: auto;
+    border: 0.1em solid;
+}
+
+
+.footer {
+    background-color: rgb(230, 215, 17);
+    height: 5rem;
+}
+
+img:hover {
+    opacity: 0.6;
+}

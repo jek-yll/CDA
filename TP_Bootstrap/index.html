@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <title>Accueil</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-dark navbar-expand-md" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a href="./index.html" class="navbar-brand">
+                    <i class="bi bi-rocket-fill"></i>
+                    BattleStore
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#battleNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="battleNav">
+                    <ul class="navbar-nav ms-order-1">
+                        <li class="nav-item ">
+                            <a href="./index.html" class="nav-link active">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex ms-2 w-50  ms-md-auto me-md-auto">
+                        <input type="text" class="form-control bg-light text-dark me-2" name="searchBar">
+                        <button class="btn btn-outline-light d-flex">
+                            <i class="bi bi-search me-2">
+                            </i>
+                            Recherche
+                        </button>
+                    </form>
+                    <!-- <ul class="navbar-nav d-flex">
+                        <a href="" class="nav-item ms-auto text-light me-3">
+                            <i class="bi bi-person-circle"></i>
+                        </a>
+                        <a href="" class="nav-item ms-auto text-light">
+                            <i class="bi bi-cart2"></i>
+                        </a>
+                    </ul> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container-fluid">
+        <div class="d-flex align-items-center justify-content-center" style="height: 200px;">
+            <h2 class="fw-light display-4"> Bienvenue sur BattleStore</h2>
+        </div>
+        <div class="my-3 carousel slide" id="carouselD" data-bs-ride="carousel" style="height: 600px;">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active">
+                    <img src="./assets/Galactica.JPG.webp" alt="Galactica" class="d-block w-100 h-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/imperial_destroyer.webp" alt="Destroyer" class="d-block w-100 h-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/cylon_baseship.jpg" alt="" class="d-block w-100 h-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/Death-Star-star-wars-4534240-1280-800.webp" alt="" class="d-block w-100 h-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselD" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselD" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-3">
+            <div class="col">
+                <div class="card overflow-hidden">
+                    <img src="./assets/Galactica.JPG.webp" alt="Colonialseal">
+                    <div class="card-body">
+                        <h5 class="card-title">Galactica</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni neque nisi.</p>
+                    </div>
+                    <div class="card-footer ">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>99.99 €</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-plus"></i> Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card overflow-hidden">
+                    <img src="./assets/Galactica.JPG.webp" alt="Colonialseal">
+                    <div class="card-body">
+                        <h5 class="card-title">Galactica</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni neque nisi.</p>
+                    </div>
+                    <div class="card-footer ">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>99.99 €</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-plus"></i> Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card overflow-hidden">
+                    <img src="./assets/Galactica.JPG.webp" alt="Colonialseal">
+                    <div class="card-body">
+                        <h5 class="card-title">Galactica</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni neque nisi.</p>
+                    </div>
+                    <div class="card-footer ">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>99.99 €</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-plus"></i> Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card overflow-hidden">
+                    <img src="./assets/Galactica.JPG.webp" alt="Colonialseal">
+                    <div class="card-body">
+                        <h5 class="card-title">Galactica</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni neque nisi.</p>
+                    </div>
+                    <div class="card-footer ">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>99.99 €</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-plus"></i> Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card overflow-hidden">
+                    <img src="./assets/Galactica.JPG.webp" alt="Colonialseal">
+                    <div class="card-body">
+                        <h5 class="card-title">Galactica</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni neque nisi.</p>
+                    </div>
+                    <div class="card-footer ">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>99.99 €</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-plus"></i> Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card overflow-hidden">
+                    <img src="./assets/Galactica.JPG.webp" alt="Colonialseal">
+                    <div class="card-body">
+                        <h5 class="card-title">Galactica</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni neque nisi.</p>
+                    </div>
+                    <div class="card-footer ">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>99.99 €</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-plus"></i> Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card overflow-hidden">
+                    <img src="./assets/Galactica.JPG.webp" alt="Colonialseal">
+                    <div class="card-body">
+                        <h5 class="card-title">Galactica</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni neque nisi.</p>
+                    </div>
+                    <div class="card-footer ">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>99.99 €</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-plus"></i> Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card overflow-hidden">
+                    <img src="./assets/Galactica.JPG.webp" alt="Colonialseal">
+                    <div class="card-body">
+                        <h5 class="card-title">Galactica</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni neque nisi.</p>
+                    </div>
+                    <div class="card-footer ">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>99.99 €</span>
+                            <button class="btn btn-outline-dark"><i class="bi bi-plus"></i> Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

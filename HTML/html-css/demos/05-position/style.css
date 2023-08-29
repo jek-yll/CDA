@@ -1,0 +1,32 @@
+:root{
+    --box-size: 100px;
+}
+
+.bloc {
+    width: var(--box-size);
+    height: var(--box-size);
+}
+
+#bloc1 {
+    background: red;
+}
+
+#bloc2 {
+    position: relative;
+    left: var(--box-size);
+    background: blue;
+}
+
+#bloc3 {
+    position: relative;
+    left: calc(2 * var(--box-size));
+    background: yellow;
+
+}
+
+/* #bloc4 {
+    position: absolute;
+    background-color: green;
+    top: 310px;
+    left: 310px;
+} */

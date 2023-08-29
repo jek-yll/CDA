@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <title>Accueil</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-dark navbar-expand-md" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a href="./index.html" class="navbar-brand">
+                    <i class="bi bi-rocket-fill"></i>
+                    BattleStore
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#battleNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="battleNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link ">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contact.html" class="nav-link active">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex ms-2 w-50 ms-auto me-auto">
+                        <input type="text" class="form-control bg-light text-dark me-2" name="searchBar">
+                        <button class="btn btn-outline-light d-flex">
+                            <i class="bi bi-search me-2">
+                            </i>
+                            Recherche
+                        </button>
+                    </form>
+                    <!-- <ul class="navbar-nav d-flex">
+                        <a href="" class="nav-item ms-auto text-light me-3">
+                            <i class="bi bi-person-circle"></i>
+                        </a>
+                        <a href="" class="nav-item ms-auto text-light">
+                            <i class="bi bi-cart2"></i>
+                        </a>
+                    </ul> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+        <div class="d-flex align-items-center justify-content-center" style="height: 100px;">
+            <h2 class="fw-light display-4"> Nous contacter</h2>
+        </div>
+        <hr>
+        <form class="row my-3">
+            <div class="col-8 offset-2 bg-dark text-ligt p-3 rounded">
+                <div class="row row-cols-1 row-cols-md-2 g-2 my-2">
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="">
+                            <label for="firstname">Prénom</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="">
+                            <label for="lastname">Nom</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="">
+                    <label for="email">Email</label>
+                </div>
+                <select name="motif" id="motif" class="form-select">
+                    <option value="">Sélectionner un motif ...</option>
+                    <option value="reclamation">réclamation</option>
+                    <option value="information">information produit</option>
+                    <option value="retour">retour de commande</option>
+                    <option value="suivi">suivi de commande</option>
+                </select>
+                <div class="col-12">
+                    <label for="desc" class="form-label text-light mt-3">Message :</label>
+                    <textarea name="desc" id="desc" cols="30" rows="5" class="form-control" style="resize: none;">
+                    </textarea>
+                </div>
+                <button class="btn btn-outline-light d-block ms-auto mt-3"><i class="bi bi-send"></i>
+                    Envoyer</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>

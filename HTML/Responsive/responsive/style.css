@@ -1,0 +1,108 @@
+main {
+    display: flex;
+    justify-content: center;
+    background-color: #b1b1b1;
+    margin-top : 10px;
+    padding: 10px
+}
+
+.boite{
+    height: 250px;
+    width: 700px;
+    background-color: #202938;
+    border-radius: 15px;
+    display: flex;
+    padding: 7px;
+}
+
+@media only screen and (max-width: 768px) {
+    .boite{
+        height: min(25%, 200px);
+        width: min(80%, 800px);
+        background-color: #202938;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        padding: 7px;
+    }
+
+}
+
+.dog{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    .dog{
+        border-radius: 15px 15px 0 0;
+        
+    }
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        align-items: center;
+    }
+}
+
+.content > h3, p{
+    color: aliceblue;
+}
+
+/* button {
+    border: none;
+    width: 33%;
+    height: 100%;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 750;
+    background-color: #A3E637;
+} */
+
+button {
+    padding: 1em 2.1em 1.1em;
+    border-radius: 20px;
+    margin: 8px 8px 8px 8px;
+    color: #181818;
+    display: inline-block;
+    background: #A3E637;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: .85em;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    position: relative;
+}
+
+button:hover, button:focus {
+    opacity: 0.8;
+}
+
+input {
+    border: 2px solid grey;
+    border-radius: 15px;
+    width: 50%;
+    height: 50px;
+    background-color: #202938;
+    color: #b1b1b1;
+    font-size: 1rem;
+    margin-right: 5px;
+}
+

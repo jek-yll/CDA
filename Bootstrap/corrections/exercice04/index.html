@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 04</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="container">
+        <div class="my-3 row">
+            <div class="col-8 offset-2 bg-dark text-light p-4 rounded">
+                <h3 class="fw-light">- Ajouter un Livre -</h3>
+                <hr>
+                <form>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="title" class="form-label mt-3">Titre:</label>
+                            <input type="text" class="form-control" id="title" name="title">
+                            <label for="author" class="form-label mt-3">Auteur:</label>
+                            <select class="form-select" id="author" name="author">
+                                <option value="">Sélectionner un auteur...</option>
+                                <!-- option[value="author-$$"]{Auteur n°$$}*5 -->
+                                <option value="author-01">Auteur n°01</option>
+                                <option value="author-02">Auteur n°02</option>
+                                <option value="author-03">Auteur n°03</option>
+                                <option value="author-04">Auteur n°04</option>
+                                <option value="author-05">Auteur n°05</option>
+                            </select>
+                            <label for="cover" class="form-label mt-3">Couverture:</label>
+                            <input type="file" class="form-control" id="cover" name="cover">
+                            <label for="score" class="form-label mt-3">Score:</label>
+                            <input type="range" min="0" max="4" step="1" class="form-range" id="score" name="score">
+                            <div class="row">
+                                <div class="col">Nul</div>
+                                <div class="col text-center">Mauvais</div>
+                                <div class="col text-center">Normal</div>
+                                <div class="col text-center">Bon</div>
+                                <div class="col text-end">Bestseller</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label for="isbn" class="form-label mt-3">ISBN:</label>
+                            <input type="text" class="form-control" id="isbn" name="isbn">
+                            <label for="genre" class="form-label mt-3">Genre:</label>
+                            <select multiple class="form-select" id="genre" name="genre">
+                                <!-- option[value="genre-$$"]{Langue n°$$}*5 -->
+                                <option value="genre-01">Genre n°01</option>
+                                <option value="genre-02">Genre n°02</option>
+                                <option value="genre-03">Genre n°03</option>
+                                <option value="genre-04">Genre n°04</option>
+                                <option value="genre-05">Genre n°05</option>
+                            </select>
+                            <label for="price" class="form-label mt-3">Titre:</label>
+                            <input type="number" step="0.01" class="form-control" id="price" name="price">
+                            <label for="language" class="form-label mt-3">Langue:</label>
+                            <select class="form-select" id="language" name="language">
+                                <option value="">Sélectionner une langue...</option>
+                                <!-- option[value="language-$$"]{Langue n°$$}*5 -->
+                                <option value="language-01">Langue n°01</option>
+                                <option value="language-02">Langue n°02</option>
+                                <option value="language-03">Langue n°03</option>
+                                <option value="language-04">Langue n°04</option>
+                                <option value="language-05">Langue n°05</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="desc" class="form-label mt-3">Description:</label>
+                            <textarea name="desc" id="desc" cols="30" rows="5" class="form-control" style="resize: none;"></textarea>
+                            <hr>
+                        </div>
+                        <button class="btn btn-outline-light d-block ms-auto"><i class="bi bi-plus-circle"></i> Ajouter</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

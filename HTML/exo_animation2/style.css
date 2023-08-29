@@ -1,0 +1,72 @@
+@keyframes zoom {
+    0% {
+        transform: scale(0.6);
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+
+    100% {  
+        transform: scale(0.6);
+    }
+}
+
+@keyframes roll_to_right_b {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+html, body {
+    margin: 0;
+}
+
+.drapeau {
+    display: flex;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(10, 10, 155);
+    justify-content: center;
+    align-items: center;
+}
+
+.ue {
+    color: #CBB922;
+    font-size: 5rem;
+    font-family: sans-serif;
+    animation-name: zoom;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    align-self: center;
+    position: absolute;
+}
+
+.cercle {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 9999999px;
+    background: #5f5f5f;
+    justify-content: center;
+    position: relative;
+    /* animation: roll_to_right_b 2s linear infinite; */
+}
+
+.star-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    animation: roll_to_right_b 2s linear infinite;
+}
+
+.star {
+    filter: invert(63%) sepia(57%) saturate(553%) hue-rotate(16deg) brightness(100%) contrast(93%);
+}

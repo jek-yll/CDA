@@ -1,0 +1,33 @@
+img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+span {
+    position: absolute;
+    color: beige;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+}
+
+#desert > img {
+    height: 100%;
+    width: 100%;
+    filter: grayscale(1);
+    transition: all;
+    transition-duration: 1000ms;
+    position: relative;
+
+
+    /* 
+        invert() pour mettre en négatif
+        hue-rotate() pour changer la teinte (valeur en degrès)
+        grayscale() pour mettre en noir et blanc
+        sepia() pour un effet sepia (vintage)
+    */
+}
+
+#desert:hover {
+    filter: none;
+}

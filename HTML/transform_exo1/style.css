@@ -1,0 +1,46 @@
+main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 6fr 4fr;     
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    position: relative;
+}
+
+h1, p{
+    align-self: center;
+}
+
+.btn {
+    justify-content: space-around;
+}
+
+
+#background {
+    width: 100%;
+    height: 100%;
+   
+}
+
+#triangle {
+    position: absolute;
+    filter: invert(81%) sepia(39%) saturate(1755%) hue-rotate(360deg) brightness(103%) contrast(104%);
+} 
+
+#circle {
+    position: absolute;
+    transform: scale(0.5) translate(-1290px) translateY(1200px);
+    filter: invert(81%) sepia(39%) saturate(1755%) hue-rotate(360deg) brightness(103%) contrast(104%);
+}
+
+#square {
+    position: absolute;
+    transform: scale(0.3) rotate(45deg);
+} 

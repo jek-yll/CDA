@@ -1,0 +1,22 @@
+.col:nth-child(4n+1) > .bg-custom {
+    background-color: red;
+}
+
+.col:nth-child(4n+2) > .bg-custom {
+    background-color: green;
+}
+
+.col:nth-child(4n+3) > .bg-custom {
+    background-color: blue;
+}
+
+.col:nth-child(4n+4) > .bg-custom {
+    background-color: gray;
+}
+
+/* *:nth-child(even) Pour cibler les éléments enfants qui ont un index pair */
+/* *:nth-child(odd) Pour cibler les éléments enfants qui ont un index impair */
+/* *:nth-child(3) Pour cibler l'élément étant le 3e enfant */
+/* *:nth-child(3n) Pour cibler les éléments étant les 3 fois Xe enfant */
+/* *:nth-child(-n + 5) Pour cibler 5 premiers éléments d'une série */
+/* *:nth-child(XXXX) Pour cibler 5 premiers éléments d'une série */
