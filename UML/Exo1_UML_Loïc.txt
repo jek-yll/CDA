@@ -1,0 +1,18 @@
+Question 1: 
+Acteur -> le client 
+Action -> charger son titre
+
+Question 2: 
+Non l'acteur ne change pas, il s'agit toujours d'un client.
+De la même manière qu'a la question précédente, il s'agit du même cas d'utilisation. 
+un client charge son titre
+
+Question 3:
+Oui, il s'agit de l'acteur "technicien"
+Acteur -> technicien
+Action -> réparer une borne
+
+Question 4: 
+le techniciens est un type d'agent 
+action des agents : remplacer une pièces 
+		    remplacer un produit
