@@ -885,117 +885,6 @@
 										},
 										{
 											"_type": "UMLSeqMessageView",
-											"_id": "AAAAAAGKTAezwRZ03L0=",
-											"_parent": {
-												"$ref": "AAAAAAGKS/ZUWBRwzo0="
-											},
-											"model": {
-												"$ref": "AAAAAAGKTAezwRZzKDE="
-											},
-											"subViews": [
-												{
-													"_type": "EdgeLabelView",
-													"_id": "AAAAAAGKTAezwRZ1Tm8=",
-													"_parent": {
-														"$ref": "AAAAAAGKTAezwRZ03L0="
-													},
-													"model": {
-														"$ref": "AAAAAAGKTAezwRZzKDE="
-													},
-													"font": "Arial;13;0",
-													"left": 959,
-													"top": 344,
-													"width": 104.78076171875,
-													"height": 13,
-													"alpha": 1.630426031047044,
-													"distance": 67.11929677819934,
-													"hostEdge": {
-														"$ref": "AAAAAAGKTAezwRZ03L0="
-													},
-													"edgePosition": 1,
-													"text": "5 : Edite la facture"
-												},
-												{
-													"_type": "EdgeLabelView",
-													"_id": "AAAAAAGKTAezwRZ2PGU=",
-													"_parent": {
-														"$ref": "AAAAAAGKTAezwRZ03L0="
-													},
-													"model": {
-														"$ref": "AAAAAAGKTAezwRZzKDE="
-													},
-													"visible": false,
-													"font": "Arial;13;0",
-													"left": 968,
-													"top": 347,
-													"height": 13,
-													"alpha": 1.5707963267948966,
-													"distance": 25,
-													"hostEdge": {
-														"$ref": "AAAAAAGKTAezwRZ03L0="
-													},
-													"edgePosition": 1
-												},
-												{
-													"_type": "EdgeLabelView",
-													"_id": "AAAAAAGKTAezwRZ3t9k=",
-													"_parent": {
-														"$ref": "AAAAAAGKTAezwRZ03L0="
-													},
-													"model": {
-														"$ref": "AAAAAAGKTAezwRZzKDE="
-													},
-													"visible": false,
-													"font": "Arial;13;0",
-													"left": 934,
-													"top": 348,
-													"height": 13,
-													"alpha": -1.5707963267948966,
-													"distance": 10,
-													"hostEdge": {
-														"$ref": "AAAAAAGKTAezwRZ03L0="
-													},
-													"edgePosition": 1
-												},
-												{
-													"_type": "UMLActivationView",
-													"_id": "AAAAAAGKTAezwRZ4qRU=",
-													"_parent": {
-														"$ref": "AAAAAAGKTAezwRZ03L0="
-													},
-													"model": {
-														"$ref": "AAAAAAGKTAezwRZzKDE="
-													},
-													"font": "Arial;13;0",
-													"left": 908,
-													"top": 364,
-													"width": 14,
-													"height": 29
-												}
-											],
-											"font": "Arial;13;0",
-											"head": {
-												"$ref": "AAAAAAGKS/nZdBU/v/I="
-											},
-											"tail": {
-												"$ref": "AAAAAAGKS/nZdBU/v/I="
-											},
-											"points": "914:344;944:344;944:364;921:364",
-											"nameLabel": {
-												"$ref": "AAAAAAGKTAezwRZ1Tm8="
-											},
-											"stereotypeLabel": {
-												"$ref": "AAAAAAGKTAezwRZ2PGU="
-											},
-											"propertyLabel": {
-												"$ref": "AAAAAAGKTAezwRZ3t9k="
-											},
-											"activation": {
-												"$ref": "AAAAAAGKTAezwRZ4qRU="
-											}
-										},
-										{
-											"_type": "UMLSeqMessageView",
 											"_id": "AAAAAAGKS/vqWhWYS40=",
 											"_parent": {
 												"$ref": "AAAAAAGKS/ZUWBRwzo0="
@@ -1024,7 +913,7 @@
 														"$ref": "AAAAAAGKS/vqWhWYS40="
 													},
 													"edgePosition": 1,
-													"text": "6 : Remet la composition florale et la facture"
+													"text": "5 : Remet la composition florale et la facture"
 												},
 												{
 													"_type": "EdgeLabelView",
@@ -1136,7 +1025,7 @@
 														"$ref": "AAAAAAGKTAkBYBapLvs="
 													},
 													"edgePosition": 1,
-													"text": "7 : Remet la composition florale"
+													"text": "6 : Remet la composition florale"
 												},
 												{
 													"_type": "EdgeLabelView",
@@ -1247,7 +1136,7 @@
 														"$ref": "AAAAAAGKTAle1xa/vYk="
 													},
 													"edgePosition": 1,
-													"text": "8 : Effectue le paiement"
+													"text": "7 : Effectue le paiement"
 												},
 												{
 													"_type": "EdgeLabelView",
@@ -1392,20 +1281,6 @@
 								},
 								{
 									"_type": "UMLMessage",
-									"_id": "AAAAAAGKTAezwRZzKDE=",
-									"_parent": {
-										"$ref": "AAAAAAGKS/ZUWBRv9jk="
-									},
-									"name": "Edite la facture",
-									"source": {
-										"$ref": "AAAAAAGKS/nZcxU4se0="
-									},
-									"target": {
-										"$ref": "AAAAAAGKS/nZcxU4se0="
-									}
-								},
-								{
-									"_type": "UMLMessage",
 									"_id": "AAAAAAGKS/vqWhWXnd4=",
 									"_parent": {
 										"$ref": "AAAAAAGKS/ZUWBRv9jk="
@@ -1496,7 +1371,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGKS/ZUVxRuHeo="
 							},
-							"name": "Role1"
+							"name": "Role1",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1504,7 +1380,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGKS/ZUVxRuHeo="
 							},
-							"name": "Role2"
+							"name": "Role2",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1512,7 +1389,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGKS/ZUVxRuHeo="
 							},
-							"name": "Role3"
+							"name": "Role3",
+							"type": ""
 						}
 					]
 				}
