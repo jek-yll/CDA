@@ -5,7 +5,7 @@ let nb1,
     affichage
 
 nb1 = Number(prompt("Saisir un premier nombre différent de 0"))
-nb2 = Number(prompt("Saisir un premier nombre différent de 0"))
+nb2 = Number(prompt("Saisir un second nombre différent de 0"))
 
 if( nb1 % nb2 === 0 ) {
     affichage = `Le nombre ${nb1} est divisible par ${nb2}`
