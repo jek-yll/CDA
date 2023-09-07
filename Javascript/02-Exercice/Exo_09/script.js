@@ -9,7 +9,7 @@ capital = Number(prompt("Veuillez saisir votre capital de départ"))
 tauxInteret = Number(prompt("Veuillez saisir votre taux d'intéret (en %)"))
 duree = Number(prompt("Veuillez saisir la durée de votre placement (en année)"))
 
-montant = capital * Math.pow(( 1 + tauxInteret/100),5)
+montant = capital * Math.pow(( 1 + tauxInteret/100),duree)
 
 affichage =
 `

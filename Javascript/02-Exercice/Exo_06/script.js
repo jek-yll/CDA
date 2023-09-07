@@ -13,7 +13,7 @@ affichageCarre =
 `
 <p>Les longueurs des côtès du carré  étant de ${largeur}cm</p>
 <ul>
-    <li><p>Le périmètre de ce carré est de ${largeur + largeur + largeur + largeur}</p></li>
+    <li><p>Le périmètre de ce carré est de ${largeur*4}</p></li>
     <li><p>L'aire de ce carré est de ${largeur**2}</p></li>
 </ul>
 `

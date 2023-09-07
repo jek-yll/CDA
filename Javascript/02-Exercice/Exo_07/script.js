@@ -12,7 +12,7 @@ affichage =
 `
 <p>Les longueurs des cotés adjacent à l'angle droit étant de ${premierCotes}cm, et de ${secondCotes}cm</p>
 <ul>
-    <li><p>La longueur de l'hypoténuse est de ${Math.sqrt(premierCotes**2 + secondCotes**2)}</p></li>
+    <li><p>La longueur de l'hypoténuse est de ${Math.sqrt(premierCotes**2 + secondCotes**2).toFixed(2)}</p></li>
 </ul>
 `
 
