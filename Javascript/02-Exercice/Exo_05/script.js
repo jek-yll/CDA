@@ -14,8 +14,6 @@ for (let i = 0; i < phraseTable.length ; i++){
     phraseTable[i] = phraseTable[i].charAt(0).toUpperCase() + phraseTable[i].slice(1);
 };
 
-
-
 console.log(phraseTable)
 
 phraseTraitement = phraseTable.join(' ');
