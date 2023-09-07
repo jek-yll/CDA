@@ -13,4 +13,4 @@ if( nb1 % nb2 === 0 ) {
     affichage = `Le nombre ${nb1} n'est pas divisible par ${nb2}`
 }
 
-result.innerHTML = affichage
+ result.innerHTML = affichage

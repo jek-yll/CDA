@@ -10,7 +10,7 @@ let mailUser,
 mailUser = prompt("Saisir votre adresse mail")
 mdpUser = prompt("Saisir votre adresse mot de passe")
 
-if (mail === mailUser && mdp === mdpUser) {
+if (mailUser === mail && mdpUser === mdp) {
     affichage = `Bienvenue sur votre espace sécurisé`
 } else {
     affichage = `Vos informations sont incorrect`
