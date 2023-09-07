@@ -11,11 +11,12 @@ duree = Number(prompt("Veuillez saisir la durée de votre placement (en année)"
 
 montant = capital * Math.pow(( 1 + tauxInteret/100),5)
 
-affichage = `
+affichage =
+`
 <p>Avec un capital initial de ${capital}€, placé à ${tauxInteret}% pendants ${duree} année(s)</p>
 <ul>
-    <li>Le montant total des intérêts s'élèvera à ${Math.round(montant - capital)}</li>
-    <li>Le capital final à l'issue sera de ${Math.round(montant)}</li>
+    <li>Le montant total des intérêts s'élèvera à ${Math.round(((montant - capital)*100)/100)}</li>
+    <li>Le capital final à l'issue sera de ${Math.round((montant*100)/100)}</li>
 </ul>
 `
 

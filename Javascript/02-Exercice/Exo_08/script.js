@@ -10,7 +10,8 @@ tva = Number(prompt("Veuillez saisir le taux T.V.A (en %)"))
 montantTva = (tva*prixHt)/100
 
 
-affichage = `
+affichage = 
+`
 <p>Le prix H.T de l'objet étant de ${prixHt}€, avec un tax de T.V.A applicable de ${tva}%</p>
 <ul>
     <li>Le montant de la T.V.A s'élèvera à ${montantTva}€</li>
