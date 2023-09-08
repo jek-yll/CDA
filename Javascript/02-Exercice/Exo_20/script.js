@@ -1,6 +1,6 @@
 const result = document.querySelector(".result")
 
-let mtNetImposable,
+let rvnFoyer,
     nbAdulte,
     nbEnfant,
     nbPart,
@@ -9,38 +9,44 @@ let mtNetImposable,
     message,
     rvnNetImposable
 
-mtNetImposable = Number(prompt("Saisir votre montant net imposable (en €)"))
+rvnFoyer = Number(prompt("Saisir votre montant net imposable (en €)"))
 nbAdulte = Number(prompt("Saisir le nombre d'adulte du foyer"))
 nbEnfant = Number(prompt("Saisir le nombre d'enfant du foyer"))
 
+// Calcul des parts du foyer
 nbEnfant > 2 ? nbPart = nbAdulte + nbEnfant - 1 : nbPart = nbAdulte + 0.5*nbEnfant
 
-rvnNetImposable = mtNetImposable / nbPart
+// Calcul du revenu net imposable
+rvnNetImposable = rvnFoyer / nbPart
 
-message = `Le montant de l'impôt sur le revenu pour un foyer composé de ${nbAdulte} adulte(s) et de ${nbEnfant} enfant(s), avec un revenu fiscal de ${mtNetImposable} € s'élève à `
+message = `<p>Le montant de l'impôt sur le revenu pour un foyer composé de <b>${nbAdulte} 
+adulte(s)</b> et de <b>${nbEnfant} enfant(s) </b>, avec un revenu fiscal de <b>${rvnFoyer} €</b> s'élève à `
 
+// Calcul du montant de l'impôt à payer
 switch (true) {
     case rvnNetImposable >= 10778 && rvnNetImposable <= 27478:
         fraction = rvnNetImposable - 10778
-        impots = (fraction*1.11)*nbPart
+        impots = (fraction*0.11)*nbPart
+        message += `<b>${Math.round(impots)}€</b></p>`
     break
     case rvnNetImposable >= 27479 && rvnNetImposable <= 78570:
         fraction = rvnNetImposable - 27479
-        impots = ((16700*1.11) + (fraction*1.30))*nbPart
+        impots = ((16700*0.11) + (fraction*0.30))*nbPart
+        message += `<b>${Math.round(impots)}€</b></p>`
     break
     case rvnNetImposable >= 78571 && rvnNetImposable <= 168994:
-        
+        fraction = rvnNetImposable - 78571
+        impots = ((16700*0.11) + (51091*0.30) + (fraction*0.41))*nbPart
+        message += `<b>${Math.round(impots)}€</b></p>`
     break
     case rvnNetImposable >= 168994 :
-        
+        fraction = rvnNetImposable - 168994
+        impots = ((16700*0.11) + (51091*0.30) + (90423*0.41) +(fraction*0.45))*nbPart
+        message += `<b>${Math.round(impots)}€</b></p>`
     break
     default: 
     impots = 0
-    message+=`${impots}`
+    message+=`<b>${impots}€</b></p>`
 }
 
-
 result.innerHTML = message
-
-
-
