@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Le nombre mystère</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Le nombre mystère</h1>
+        <p>J'ai généré un nombre entre 1 et 50 inclus</p>
+        <p>Essayez de le deviner en proposant ci-dessous</p>
+        
+        <div class="jeu">
+            <p class="nbCoup"></p>
+            <input type="number" class="nbUser" id="nbUser" onfocus="this.value=''" >
+            <button class="test" onclick="tester()" >Valider</button>
+        </div>
+        <p class="indice"></p>
+        <button class="rePlay" onclick="replay()">Rejouer</button>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

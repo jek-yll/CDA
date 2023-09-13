@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=VT323&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.titre {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.calculatrice {
+    max-width: 250px;
+    background: rgb(61, 61, 61);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px black;
+}
+
+.ecran {
+    width: 100%;
+    height: 100px;
+    background: #2d3030;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 25px;
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: 'VT323', monospace;
+    overflow: auto;
+}
+
+.ecranHaut{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    color: #b3b3b3;
+    overflow: hidden;
+}
+
+.ecranBas{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.boutons{
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(5, 50px);
+    grid-gap: 7px;
+}
+
+button {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    border-radius: 78px;
+    background: linear-gradient(145deg, #464646, #3b3b3b);
+    box-shadow:  4px 4px 8px #282828,
+                -4px -4px 8px #5a5a5a;
+}
+
+button:active{
+    box-shadow: 0 1px #4e4e4e;
+    transform: translateY(2px);
+}
+
+
+
+button[data-key="Backspace"] {     
+    font-weight: bold;
+    color: #d82c2c;
+}
+
+button[data-key="Enter"]{
+    grid-column: span 2;
+    border-radius: 999px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #47c758;
+}
