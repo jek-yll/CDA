@@ -1,5 +1,5 @@
 const boutons = [...document.querySelectorAll(".bouton")]
-const listeCode =  boutons.map(bouton => bouton.dataset.key)
+const listeCodes =  boutons.map(bouton => bouton.dataset.key)
 const ecranBas = document.querySelector(".ecranBas")
 const ecranHaut = document.querySelector(".ecranHaut")
 
@@ -7,6 +7,7 @@ let chaine = ""
 
 document.addEventListener('keydown', (event) => {
     const valeur = event.code
+    console.log(event);
     calculer(valeur)
 })
 
@@ -15,8 +16,9 @@ document.addEventListener('click', (event) => {
     calculer(valeur)  
 })
 
+
 const calculer = (valeur) => {
-    if (listeCode.includes(valeur)) {
+    if (listeCodes.includes(valeur)) {
         switch(valeur) {
             case 'Backspace':
                 ecranHaut.innerHTML = ""
@@ -24,13 +26,23 @@ const calculer = (valeur) => {
                 chaine = ""
                 break;
             case 'Enter':
-                const calcul = eval(ecranBas.textContent)
-                ecranHaut.innerHTML = chaine
-                ecranBas.textContent = calcul
-                // ecranBas.textContent = `= ${calcul}`
+                try{
+                    const calcul = eval(ecranBas.textContent)
+                    ecranHaut.innerHTML = chaine
+                    ecranBas.textContent = calcul
+                } catch(error){
+                    alert(`Calcul incorrect \n ${error}`)
+                }
                 break;
+            /* 
+                Todo : ajout case: 
+                NumpadDivide
+                NumpadMultiply
+                NumpadSubtract
+                NumpadAdd
+            */
             default:
-                const indexCode = listeCode.indexOf(valeur)
+                const indexCode = listeCodes.indexOf(valeur)
                 const caractere = boutons[indexCode]
                 chaine += caractere.textContent
                 ecranBas.textContent += caractere.innerHTML
