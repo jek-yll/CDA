@@ -1,14 +1,23 @@
 export class Personne {
-    constructor(titre, nom, prenom, dateNassance, telephone, email){
+    constructor(titre, nom, prenom, dateNaissance, telephone, email){
         this.titre = titre,
         this.nom = nom,
         this.prenom = prenom,
-        this.dateNassance = dateNassance,
+        this.dateNaissance = dateNaissance,
         this.telephone = telephone,
         this.email = email
     }
 
-    ajouter(){
-
+    creerContact(){
+        return `
+            <tr>
+                <td>${this.titre}</td>
+                <td>${this.nom}</td>
+                <td>${this.prenom}</td>
+                <td>${this.dateNaissance}</td>
+                <td>${this.telephone}</td>
+                <td>${this.email}</td>
+            </tr>
+        `
     }
 }

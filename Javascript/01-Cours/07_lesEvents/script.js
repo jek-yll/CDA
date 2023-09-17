@@ -34,4 +34,5 @@ let bouton = document.querySelector("#bouton")
 bouton.addEventListener("click", (event) => {
     let valeur = event.target.dataset.key
     alert(valeur)
+    console.log(event)
 })
