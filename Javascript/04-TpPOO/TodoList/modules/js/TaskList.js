@@ -6,14 +6,13 @@ export class TaskList {
     }
 
     addTask(text){
-        let taskId = this.tasks.length + 1
-        let newTask = new Task(taskId, text)
+        const taskId = this.tasks.length + 1
+        const newTask = new Task(taskId, text)
         this.tasks.push(newTask)
     }
 
     removeTask(taskId){
         this.tasks = this.tasks.filter(task => task.id !== taskId);
-        console.log(this.tasks)
     }
 
     renderTasks() {

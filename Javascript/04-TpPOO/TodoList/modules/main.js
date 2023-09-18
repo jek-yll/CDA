@@ -20,6 +20,7 @@ result.addEventListener ('click', (event) => {
     const taskId = Number(event.target.parentElement.getAttribute("id"))
     mesTaches.removeTask(taskId)
     mesTaches.renderTasks()
+    console.log(event);
 })
 
 removeAll.addEventListener ('click', () => {
