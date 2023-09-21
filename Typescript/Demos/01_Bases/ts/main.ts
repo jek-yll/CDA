@@ -87,3 +87,58 @@ console.table(numbers);
 let tab: any[];
 
 // On peux déclarer un tableau qui contient plusieurs types alors que tous ces types peuvent être présent dans le tableau
+
+let tab2 = [42, true/* , "Loïc" */] 
+console.log(tab2);
+// tab2[1]="toto"  // Erreur
+// console.log(tab2);
+
+// Tuple 
+
+// On peut aussi via le TS créer des tuples, des Arrays de taille fixe 
+// On devra avoir le nombre d'éléments dans la variable et le bon typage dans le bon ordre
+
+let myPerson: [string, string, number]
+myPerson =  ["Albert","Dupont", 45]
+// myPerson =  ["Alber", 45, "Dupont"]//erreur
+myPerson.push("toto") // incohérence mais fonctionne
+myPerson.push(22) // incohérence mais fonctionne
+// myPerson.push(true) // Erreur (le tableau n'autorise que string ou number)
+
+console.table(myPerson);
+
+// myPerson[3] // index non connu donc erreur
+// console.log(myPerson.indexOf(22));
+// myPerson.forEach(person => console.log(myPerson.indexOf(person)))
+
+// Objets 
+
+let monObjetA = {
+    firstname : "Albert",
+    lastname : "Dupond",
+    age : 38
+}
+
+// indicateur de valeur objet 
+
+let monObjetB : object = { // permet de definir que c'est un objet sans précision
+    firstname : "Albert",
+    lastname : "Dupond",
+    age : 38
+}
+
+monObjetA.age
+// monObjetB.age  // ne trouve pas
+
+let monObjetC : {
+    firstname : string,
+    lastname : string,
+    age : number
+} = {
+    firstname : "Albert",
+    lastname : "Dupond",
+    age : 38
+} 
+
+monObjetC.firstname // Trouve la propriété
+// De préférence, utilisation de l'inférence pour les objets

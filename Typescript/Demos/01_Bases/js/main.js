@@ -44,3 +44,27 @@ let numbers2 = [1, 2, 3, 4];
 numbers.push(5);
 console.table(numbers);
 let tab;
+let tab2 = [42, true];
+console.log(tab2);
+let myPerson;
+myPerson = ["Albert", "Dupont", 45];
+myPerson.push("toto");
+myPerson.push(22);
+console.table(myPerson);
+let monObjetA = {
+    firstname: "Albert",
+    lastname: "Dupond",
+    age: 38
+};
+let monObjetB = {
+    firstname: "Albert",
+    lastname: "Dupond",
+    age: 38
+};
+monObjetA.age;
+let monObjetC = {
+    firstname: "Albert",
+    lastname: "Dupond",
+    age: 38
+};
+monObjetC.firstname;
