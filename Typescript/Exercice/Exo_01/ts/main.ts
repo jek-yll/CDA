@@ -14,11 +14,7 @@ let person : object = {
 }
 // console.log(person.age); // Ne retourne rien -> Property 'age' does not exist on type 'object'.
 
-let person1 : {
-    firstName : string,
-    age : number,
-    isLoggedIn : boolean
-} = {
+let person1 : { firstName : string, age : number, isLoggedIn : boolean } = {
     firstName : "Dupont",
     age : 20,
     isLoggedIn : true
