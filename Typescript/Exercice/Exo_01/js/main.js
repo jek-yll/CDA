@@ -10,7 +10,6 @@ let person = {
     age: 20,
     isLoggedIn: true
 };
-// console.log(person.age); // Ne retourne rien -> Property 'age' does not exist on type 'object'.
 let person1 = {
     firstName: "Dupont",
     age: 20,
