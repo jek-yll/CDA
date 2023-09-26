@@ -133,3 +133,11 @@ function onInputChanged(event) {
     monTexte = event.target.value;
     monTexte = event.target.value;
 }
+// Union type 
+let strOrNum; // string ou number 
+// strOrNum = true // ne fonctionne pas 
+strOrNum = 42; // accepté
+strOrNum = "42"; // accepté
+let strOrNum2 = 42;
+strOrNum2 = "42";
+// strOrNum = true // ne fonctionne pas

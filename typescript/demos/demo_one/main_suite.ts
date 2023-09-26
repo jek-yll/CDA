@@ -172,4 +172,16 @@ function onInputChanged(event: InputEvent){
 }
 
 
+// Union type 
+
+let strOrNum: string | number; // string ou number 
+
+// strOrNum = true // ne fonctionne pas 
+strOrNum = 42 // accepté
+strOrNum = "42" // accepté
+
+type stringOrNumber = string | number;
+let strOrNum2: stringOrNumber = 42
+strOrNum2 = "42"
+// strOrNum = true // ne fonctionne pas
 
