@@ -12,3 +12,27 @@ let myStudent;
 myStudent = new Student("titi", "tata", 45, 545215, true);
 console.log(myStudent.toString());
 console.log(`Il y a actuellement ${Person.count} personnes`);
+console.clear();
+let monObjetA = {
+    firstname: "Alphonse",
+    lastname: "DUPONT"
+};
+let monObjetB = {
+    firstname: "Alphonse",
+    lastname: "DUPONT",
+    numeroIdNat: 12345,
+    acheter() {
+        if (this.firstname === "blabla") {
+            return 99;
+        }
+        else {
+            return 23;
+        }
+    }
+};
+let monObjetC = {
+    firstname: "Thierry",
+    lastname: "DUPONT",
+    pointFide: 42,
+};
+console.log(monObjetC.firstname);
