@@ -6,12 +6,12 @@ class Pile<T>{
         this.pile = []
     }
 
-    empiler(value: T){
+    empiler(value: T): void{
         this.pile.push(value)
         console.log(this.pile);
     }
 
-    depiler(){
+    depiler(): void{
         this.pile.pop()
         console.log(this.pile);
     }
