@@ -185,3 +185,28 @@ let strOrNum2: stringOrNumber = 42
 strOrNum2 = "42"
 // strOrNum = true // ne fonctionne pas
 
+// Intersection type
+
+interface Poisson {
+    nom: string;
+    yeux: number
+}
+interface Couleur {
+    href: string
+}
+
+let poissonRouge: Poisson & Couleur
+poissonRouge = {
+    nom: "Maurice",
+    yeux: 3,
+    href: "#FFFFFF"
+}
+
+type PoissonRed = Poisson & Couleur;
+let poissonRed: PoissonRed;
+poissonRed = {
+    nom: "Maurice",
+    yeux: 3,
+    href: "#FFFFFF"
+}
+
