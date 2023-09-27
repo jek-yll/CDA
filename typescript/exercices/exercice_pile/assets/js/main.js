@@ -9,11 +9,11 @@ class Pile {
     depiler() {
         this.pile.pop();
         console.log(this.pile);
-        ;
     }
 }
 let maPile = new Pile;
 maPile.empiler("42");
 maPile.empiler(552);
 maPile.empiler(true);
-maPile.depiler();
+// maPile.depiler()
+console.log(maPile);

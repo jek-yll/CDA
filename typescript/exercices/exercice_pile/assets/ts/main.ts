@@ -6,14 +6,14 @@ class Pile<T>{
         this.pile = []
     }
 
-    empiler(value: T): void{
+    empiler(value: T){
         this.pile.push(value)
         console.log(this.pile);
     }
 
-    depiler(): void{
+    depiler(){
         this.pile.pop()
-        console.log(this.pile);;
+        console.log(this.pile);
     }
 }
 
@@ -21,4 +21,5 @@ let maPile = new Pile
 maPile.empiler("42")
 maPile.empiler(552)
 maPile.empiler(true)
-maPile.depiler()
+// maPile.depiler()
+console.log(maPile);
