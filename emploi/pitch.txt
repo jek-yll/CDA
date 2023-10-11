@@ -30,7 +30,7 @@ mobile destiné à une utilisation interne à INSY2S.
 
 Au cours de ces stages j'ai pu développé mon autonomie sur l'apprentissage de technos que je n'avais jamais abordé auparavant. j'ai effectivement du organiser ma monté en compétence 
 sur REACT et REACT NATIVE afin de répondre au besoin technique de développement imposé par l'entreprise. 
-Ces stages m'ont également permis de développé mon agilité puisque nous avous suivi les methode de gestion de projet dite agiles. 
+Ces stages m'ont également permis de développé mon agilité puisque nous avons suivi les methodes de gestion de projet dite agiles. 
 
 
 Profile junior ? -> + maléable, maitrise des dernieres technos / tjrs en veil 
