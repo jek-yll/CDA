@@ -1,0 +1,42 @@
+{
+  "personnes": [
+    {
+      "id": 1,
+      "nom": "dupond",
+      "prenom": "jean"
+    },
+    {
+      "id": 2,
+      "nom": "dupont",
+      "prenom": "hubert"
+    },
+    {
+      "id": 4,
+      "nom": "json",
+      "prenom": "jacquie"
+    },
+    {
+      "id": 5,
+      "nom": "doe",
+      "prenom": "john"
+    },
+    {
+      "nom": "bouleau",
+      "prenom": "jean",
+      "id": 6
+    },
+    {
+      "nom": "pagnol",
+      "prenom": "marcel",
+      "id": 8
+    }
+  ],
+  "voitures": [
+    {
+      "id": 1,
+      "immat": "AX123AJ",
+      "modele": "206",
+      "marque": "peugeot"
+    }
+  ]
+}
